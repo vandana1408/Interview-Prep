@@ -1,2 +1,3 @@
 # Interview-Prep
-Solving random coding questions here.
+
+Repo where I put my attempts at coding questions that are likely to come up in interviews. 
