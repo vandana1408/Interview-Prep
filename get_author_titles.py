@@ -1,4 +1,9 @@
+"""
+GET_AUTHOR_TITLES.PY
 
+Write an HTTP GET method to retrieve information from an articles' database. The query response is paginated and can be further accessed by appending to the query string &page=num where num is the page number.
+
+"""
 import requests 
 import json 
 
@@ -21,6 +26,7 @@ def get_article_titles(author):
                 titles.append(articles['title'])
             elif articles['story_title']: 
                 titles.append(articles['story_title'])
+                
         page += 1
                         
     return titles  

@@ -1,7 +1,7 @@
 """
 DIVISOR_MULTIPLE.PY
 
-Given an array of n item values, sort the array in ascending order, first by the frequency of each value,  then by the values themselves.
+Given an array of n item values, find the total number of divisors and multiples in the list for each integer. 
 
 """
 
