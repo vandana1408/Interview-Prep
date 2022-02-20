@@ -16,9 +16,16 @@ def get_article_titles(author):
         
         data = json.loads(req.text) 
         
-        return data 
+        for articles in data['data']: 
+            if articles['title']: 
+                titles.append(articles['title'])
+            elif articles['story_title']: 
+                titles.append(articles['story_title'])
+        page += 1
+                        
+    return titles  
 
 if __name__ == "__main__":
-    print(get_article_titles("patricktomas"))   
+    print(get_article_titles("epaga"))   
     
     
